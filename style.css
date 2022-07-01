@@ -7,6 +7,10 @@ h2 {
     text-align: center;
 }
 
+img {
+    float: right;
+}
+
 h1,
 nav {
     text-align: center;
@@ -19,4 +23,163 @@ a {
     list-style-type: none;
     margin-right: 10px;
     color: black;
+}
+
+#centro {
+    text-align: center;
+}
+
+#fim {
+    text-align: center;
+}
+
+#artigo2 {
+    float: right;
+    background-color: #3B90EB;
+}
+
+#artigo3 {
+    float: right;
+}
+
+#artigo4 {
+    float: right;
+    background-color: #3B90EB;
+}
+
+#topo {
+    position: fixed;
+    bottom: 1rem;
+
+    right: 2.5rem;
+    opacity: 0;
+
+    visibility: hidden;
+    transition: 200ms;
+}
+
+#topo.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/*=====/Grid\=====*/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+}
+
+/*=====/Imagem\=====*/
+
+.img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper>img {
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+    margin: auto;
+}
+
+/*=====/Content\=====*/
+
+.img-wrapper>.content1 {
+    position: absolute;
+    inset: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.img-wrapper>.content2 {
+    position: absolute;
+    inset: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.img-wrapper>.content3 {
+    position: absolute;
+    inset: 0;
+    font-size: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+/*=====/Vidro1\=====*/
+
+.vidro1 {
+    background-color: rgb(159, 159, 159);
+    color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.img-wrapper>img,
+.img-wrapper>.content1 {
+    transition: 100ms ease-in-out;
+}
+
+.img-wrapper>.content1 .fade {
+    opacity: 0;
+}
+
+.img-wrapper:hover>.content1 .fade {
+    opacity: 1;
+}
+
+/*=====/Vidro2\=====*/
+
+.vidro2 {
+    background-color: rgb(159, 159, 159);
+    color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.img-wrapper>img,
+.img-wrapper>.content2 {
+    transition: 100ms ease-in-out;
+}
+
+.img-wrapper>.content2 .fade {
+    opacity: 0;
+}
+
+.img-wrapper:hover>.content2 .fade {
+    opacity: 1;
+}
+
+/*=====/Vidro3\=====*/
+
+.vidro3 {
+    background-color: rgb(159, 159, 159);
+    color: #000;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.img-wrapper>img,
+.img-wrapper>.content3 {
+    transition: 100ms ease-in-out;
+}
+
+.img-wrapper>.content3 .fade {
+    opacity: 0;
+}
+
+.img-wrapper:hover>.content3 .fade {
+    opacity: 1;
 }
