@@ -1,0 +1,22 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1,
+nav {
+    text-align: center;
+}
+
+li,
+a {
+    text-decoration: none;
+    display: inline;
+    list-style-type: none;
+    margin-right: 10px;
+    color: black;
+}

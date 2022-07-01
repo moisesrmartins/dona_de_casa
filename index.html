@@ -4,10 +4,11 @@
         <meta charset="UTF-8">
         <title>Dona de Casa</title>
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <h1>Dona de Casa</h1>
+        <h1 id="inicio">Dona de Casa</h1>
         <nav id="menu">
             <ul>
                 <li>
@@ -17,17 +18,18 @@
                     <a href="#Produtos">Produtos de Limpeza</a>
                 </li>
                 <li>
-                    <a href="#">Cronograma de Limpeza Semanal</a>
+                    <a href="#Cronograma">Cronograma de Limpeza Semanal</a>
                 </li>
             </ul>
         </nav>
-
-        <article>
-            <h2>O que Encontrar</h2>
-            <p>Aqui você encontrará algumas formas de limpar a sua casa da melhor forma possível, como <b>dicas</b>, <b>produtos</b> e até mesmo um <b>cronograma</b></p>
+        <article id="artigo1">
+            <div id="centro">
+                <h2>O que Encontrar</h2>
+                <p>Aqui você encontrará algumas formas de limpar a sua casa da melhor forma possível, como <b>dicas</b>, <b>produtos</b> e até mesmo um <b>cronograma</b></p>
+            </div>
         </article>
 
-        <article>
+        <article id="artigo2">
             <h2 id="Dicas">Dicas de Limpeza</h2>
         
             <p>Limpar a Casa é muito importante, para os cuidados com a higiene e a saúde. Sendo uma atividade pesada e cansativa, truques e sugestões para tornar esse momento mais fácil e eficaz são sempre bem-vindos.</p>
@@ -62,19 +64,21 @@
         
             <p>Um dia antes de iniciar a limpeza, olhe nos armários, guarda-roupas, estantes em busca de sujeiras, bagunças ou desorganizações. Buscando por isso e organizando e limpando, no dia seguinte, o dia da limpeza, terá menos problemas e assim uma maior facilidade na hora de limpar, fazendo com que seja mais rápido e menos trabalhoso. </p>
         
-            <h3>Fim das Dicas</h3>
-            <p>O que achou das Dicas, elas foram boas e te ajudaram?</p>
-            <p>
-                <input type="radio" id="cSim" name="tResp" value="subscribe">
-                <label for="cSim">- Sim</label>
-            </p>
-            <p>
-                <input type="radio" id="cNao" name="tResp" value="subscribe">
-                <label for="cNao">- Não</label>
-            </p>
+            <div id="fim">
+                <h3>Fim das Dicas</h3>
+                <p>O que achou das Dicas, elas foram boas e te ajudaram?</p>
+                <p>
+                    <input type="radio" id="cSim" name="tResp" value="subscribe">
+                    <label for="cSim">- Sim</label>
+                </p>
+                <p>
+                    <input type="radio" id="cNao" name="tResp" value="subscribe">
+                    <label for="cNao">- Não</label>
+                </p>
+            </div>
         </article>
 
-        <article>
+        <article id="artigo3">
             <h2 id="Produtos">Produtos de Limpeza</h2>
         
             <p>Os produtos de limpeza são os mais necessários para uma boa limpeza.</p>
@@ -126,19 +130,21 @@
             <h3>15- Tira-limo:</h3>
             <p>Indicado para limpar rejunte, pisos e azulejos, o tira-limo é sua melhor arma contra o mofo e o limo nas superfícies de uma área muito propícia à formação deles por conta do calor e da umidade.</p>
         
-            <h3>Fim dos Produtos</h3>
-            <p>O que achou dos Produtos, vai usa-los?</p>
-            <p>
-                <input type="radio" id="cSim" name="tResp" value="subscribe">
-                <label for="cSim">- Sim</label>
-            </p>
-            <p>
-                <input type="radio" id="cNao" name="tResp" value="subscribe">
-                <label for="cNao">- Não</label>
-            </p>
+            <div id="fim">
+                <h3>Fim dos Produtos</h3>
+                <p>O que achou dos Produtos, vai usa-los?</p>
+                <p>
+                    <input type="radio" id="cSim" name="tResp" value="subscribe">
+                    <label for="cSim">- Sim</label>
+                </p>
+                <p>
+                    <input type="radio" id="cNao" name="tResp" value="subscribe">
+                    <label for="cNao">- Não</label>
+                </p>
+            </div>
         </article>
 
-        <article>
+        <article id="artigo4">
             <h2 id="Cronograma">Cronograma de Limpeza Semanal</h2>
         
             <table>
@@ -146,55 +152,55 @@
                     <td><br>
                         <b>Segunda-Feira</b></br>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>07:30 - 09:30</b>
                         <p>Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:30 - 09:40</b>
                         <p>Arrumar a cozinha do Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:40 - 10:00</b>
                         <p>Passar a Vassoura na casa</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>10:00 - 10:30</b>
                         <p>Passar o Pano na casa</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>10:30 - 11:00</b>
                         <p>Limpar os Móveis da Casa</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>11:30 - 12:30</b>
                         <p>Almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>12:30 - 13:00</b>
                         <p>Arrumar a cozinha do almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>13:30 - 14:30</b>
                         <p>Trocar Roupas de Cama</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>14:40 - 15:30</b>
                         <p>Passar as Roupas</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>17:00 - 18:00</b>
                         <p>Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>18:00 - 18:30</b>
                         <p>Arrumar a cozinha do Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>20:00 - 21:00</b>
                         <p>Janta</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>21:00 - 21:30</b>
                         <p>Arrumar a cozinha da janta</p>
                     </td>
@@ -203,55 +209,55 @@
                     <td><br>
                         <b>Terça-Feira</b></br>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>07:30 - 09:30</b>
                         <p>Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:30 - 09:40</b>
                         <p>Arrumar a cozinha do Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:40 - 10:00</b>
                         <p>Banho no Bichinho de Estimação</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>10:00 - 10:30</b>
                         <p>Faxina nos Banheiros</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>10:30 - 11:00</b>
                         <p>Passar a Vassoura na casa</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>11:30 - 12:30</b>
                         <p>Almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>12:30 - 13:00</b>
                         <p>Arrumar a cozinha do almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>13:30 - 14:30</b>
                         <p>Tirar o pó dos moveis</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>14:40 - 15:30</b>
                         <p>Lavar os Panos de Prato e Chão</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>17:00 - 18:00</b>
                         <p>Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>18:00 - 18:30</b>
                         <p>Arrumar a cozinha do Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>20:00 - 21:00</b>
                         <p>Janta</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>21:00 - 21:30</b>
                         <p>Arrumar a cozinha da janta</p>
                     </td>
@@ -260,59 +266,59 @@
                     <td><br>
                         <b>Quarta-Feira</b></br>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>07:30 - 09:30</b>
                         <p>Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:30 - 09:40</b>
                         <p>Arrumar a cozinha do Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:40 - 10:00</b>
                         <p>Lavar as Toalhas</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>10:00 - 10:30</b>
                         <p>Passar Roupa</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>10:30 - 11:00</b>
                         <p>Cuidar das Plantas</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>11:30 - 12:30</b>
                         <p>Almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>12:30 - 13:00</b>
                         <p>Arrumar a cozinha do almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>13:30 - 14:30</b>
                         <p>Organizar a Dispensa</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>14:40 - 15:30</b>
                         <p>Limpar os moveis da Cozinha</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>15:40 - 16:00</b>
                         <p>Limpar as Cortinas</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>17:00 - 18:00</b>
                         <p>Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>18:00 - 18:30</b>
                         <p>Arrumar a cozinha do Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>20:00 - 21:00</b>
                         <p>Janta</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>21:00 - 21:30</b>
                         <p>Arrumar a cozinha da janta</p>
                     </td>
@@ -321,43 +327,43 @@
                     <td><br>
                         <b>Quinta-Feira</b></br>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>07:30 - 09:30</b>
                         <p>Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:30 - 09:40</b>
                         <p>Arrumar a cozinha do Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:40 - 10:00</b>
                         <p>Limpar a Geladeira</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>10:00 - 10:30</b>
                         <p>Lavar os Tapetes da Casa</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>11:30 - 13:30</b>
                         <p>Almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>13:30 - 13:50</b>
                         <p>Arrumar a cozinha do almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>17:00 - 18:00</b>
                         <p>Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>18:00 - 18:30</b>
                         <p>Arrumar a cozinha do Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>20:00 - 21:00</b>
                         <p>Janta</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>21:00 - 21:30</b>
                         <p>Arrumar a cozinha da janta</p>
                     </td>
@@ -366,43 +372,43 @@
                     <td><br>
                         <b>Sexta-Feira</b></br>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>07:30 - 09:30</b>
                         <p>Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:30 - 09:40</b>
                         <p>Arrumar a cozinha do Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:40 - 10:00</b>
                         <p>Passar o Pano na casa</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>10:00 - 11:00</b>
                         <p>Ir ao Mercado</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>11:30 - 13:30</b>
                         <p>Almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>13:30 - 13:50</b>
                         <p>Arrumar a cozinha do almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>17:00 - 18:00</b>
                         <p>Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>18:00 - 18:30</b>
                         <p>Arrumar a cozinha do Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>20:00 - 21:00</b>
                         <p>Janta</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>21:00 - 21:30</b>
                         <p>Arrumar a cozinha da janta</p>
                     </td>
@@ -411,43 +417,43 @@
                     <td><br>
                         <b>Sábado</b></br>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>07:30 - 09:30</b>
                         <p>Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:30 - 09:40</b>
                         <p>Arrumar a cozinha do Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:40 - 10:00</b>
                         <p>Lavar o Carro</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>10:00 - 10:30</b>
                         <p>Varrer a Calçada</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>11:30 - 13:30</b>
                         <p>Almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>13:30 - 13:50</b>
                         <p>Arrumar a cozinha do almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>17:00 - 18:00</b>
                         <p>Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>18:00 - 18:30</b>
                         <p>Arrumar a cozinha do Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>20:00 - 21:00</b>
                         <p>Janta</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>21:00 - 21:30</b>
                         <p>Arrumar a cozinha da janta</p>
                     </td>
@@ -456,59 +462,61 @@
                     <td><br>
                         <b>Domingo</b></br>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>07:30 - 09:30</b>
                         <p>Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:30 - 09:40</b>
                         <p>Arrumar a cozinha do Café da Manhã</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>09:40 - 10:00</b>
                         <p>Lavar a Garagem</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>11:30 - 13:30</b>
                         <p>Almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>13:30 - 13:50</b>
                         <p>Arrumar a cozinha do almoço</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>17:00 - 18:00</b>
                         <p>Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>18:00 - 18:30</b>
                         <p>Arrumar a cozinha do Café da Tarde</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>20:00 - 21:00</b>
                         <p>Janta</p>
                     </td>
-                    <td align="center" height="50" width="100">
+                    <td>
                         <b>21:00 - 21:30</b>
                         <p>Arrumar a cozinha da janta</p>
                     </td>
                 </tr>
             </table>
         
-            <h3>Fim doo Cronograma</h3>
-            <p>O que achou do Cronograma, vai usa-lo?</p>
-        
-            <p>
-                <input type="radio" id="cSim" name="tResp" value="subscribe">
-                <label for="cSim">- Sim</label>
-            </p>
-            <p>
-                <input type="radio" id="cNao" name="tResp" value="subscribe">
-                <label for="cNao">- Não</label>
-            </p>
-        
-            <h2>Observação</h2>
-            <p>Não é necessário se importar com os horários, o importante é fazer bem-feito e no seu tempo.</p>
+            <div id="fim">
+                <h3>Fim do Cronograma</h3>
+                <p>O que achou do Cronograma, vai usa-lo?</p>
+                
+                <p>
+                    <input type="radio" id="cSim" name="tResp" value="subscribe">
+                    <label for="cSim">- Sim</label>
+                </p>
+                <p>
+                    <input type="radio" id="cNao" name="tResp" value="subscribe">
+                    <label for="cNao">- Não</label>
+                </p>
+
+                <h2>Observação</h2>
+                <p>Não é necessário se importar com os horários, o importante é fazer bem-feito e no seu tempo.</p>
+            </div>
         </article>
     </body>
 </html>
